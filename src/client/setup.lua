@@ -8,6 +8,3 @@ local localPlayer = std.Services.Players.LocalPlayer
 --	//
 
 std.Assets.SERVERLIST:Clone().Parent = localPlayer.PlayerGui
-
-
-
