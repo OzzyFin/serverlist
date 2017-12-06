@@ -1,7 +1,7 @@
 <roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Frame" referent="RBXD171C25B6F2D430DB70AF8FECC29B761">
+	<Item class="Frame" referent="RBX3C762BDBAD9740B8BC749B5742EF9066">
 		<Properties>
 			<bool name="Active">false</bool>
 			<Vector2 name="AnchorPoint">
@@ -43,7 +43,7 @@
 			<bool name="Visible">false</bool>
 			<int name="ZIndex">1</int>
 		</Properties>
-		<Item class="TextButton" referent="RBX8D475C2086F24C209B43F2A95183D4FE">
+		<Item class="TextButton" referent="RBXC40C04DB80D84A899A355538FF2CE59C">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -100,7 +100,7 @@
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">1</int>
 			</Properties>
-			<Item class="TextLabel" referent="RBXDFD5A5EC5CE94DBE8A8B85A581310FBC">
+			<Item class="TextLabel" referent="RBX0BF88E0BFA1F444BB886A6F37B83B144">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -141,7 +141,7 @@
 					<bool name="SizeFromContents">false</bool>
 					<BinaryString name="Tags"></BinaryString>
 					<string name="Text">#1</string>
-					<Color3 name="TextColor3">4279970357</Color3>
+					<Color3 name="TextColor3">4292137143</Color3>
 					<bool name="TextScaled">false</bool>
 					<float name="TextSize">20</float>
 					<Color3 name="TextStrokeColor3">4278190080</Color3>
@@ -154,7 +154,7 @@
 					<int name="ZIndex">1</int>
 				</Properties>
 			</Item>
-			<Item class="TextLabel" referent="RBXFB2A6956ED4242088061B734AD1F0064">
+			<Item class="TextLabel" referent="RBX8248FBCC37BB48B8BB4680280C98ADDD">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -195,7 +195,7 @@
 					<bool name="SizeFromContents">false</bool>
 					<BinaryString name="Tags"></BinaryString>
 					<string name="Text">Players: x / y</string>
-					<Color3 name="TextColor3">4279970357</Color3>
+					<Color3 name="TextColor3">4292137143</Color3>
 					<bool name="TextScaled">false</bool>
 					<float name="TextSize">18</float>
 					<Color3 name="TextStrokeColor3">4278190080</Color3>
@@ -209,7 +209,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="TextLabel" referent="RBX4E8A33968D694306A51BB93AF556E132">
+		<Item class="TextLabel" referent="RBXA072F4D6E43A45E9B522A88090C5BD98">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -250,7 +250,7 @@
 				<bool name="SizeFromContents">false</bool>
 				<BinaryString name="Tags"></BinaryString>
 				<string name="Text">Uptime xx:xx:xx</string>
-				<Color3 name="TextColor3">4290559164</Color3>
+				<Color3 name="TextColor3">4292137143</Color3>
 				<bool name="TextScaled">false</bool>
 				<float name="TextSize">18</float>
 				<Color3 name="TextStrokeColor3">4278190080</Color3>
@@ -263,7 +263,7 @@
 				<int name="ZIndex">1</int>
 			</Properties>
 		</Item>
-		<Item class="TextLabel" referent="RBXF2CAD31186EE4F759D57C7DCC535B06E">
+		<Item class="TextLabel" referent="RBXBBE7EB8195A34EEEAD933BE4AE0BCDDE">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -304,7 +304,7 @@
 				<bool name="SizeFromContents">false</bool>
 				<BinaryString name="Tags"></BinaryString>
 				<string name="Text">Average ping: x</string>
-				<Color3 name="TextColor3">4290559164</Color3>
+				<Color3 name="TextColor3">4292137143</Color3>
 				<bool name="TextScaled">false</bool>
 				<float name="TextSize">18</float>
 				<Color3 name="TextStrokeColor3">4278190080</Color3>
@@ -317,7 +317,7 @@
 				<int name="ZIndex">1</int>
 			</Properties>
 		</Item>
-		<Item class="TextButton" referent="RBX34F807CA58594C8DA873B819CB688BF2">
+		<Item class="TextButton" referent="RBX9DCF98D6756246A88957FC87F39867FC">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
