@@ -6,8 +6,8 @@ std.Services = setmetatable({},{__index = function(self,name)
 	return service
 end})
 
-std.Modules = setmetatable({},{__index = function(self,name)
-	local module = require(std.baseFolder.modules[name])	--	// It is supposed to error for incorrect names
+std.Libraries = setmetatable({},{__index = function(self,name)
+	local module = require(std.baseFolder.libraries[name])	--	// It is supposed to error for incorrect names
 	self[name] = module
 	return module
 end})
@@ -27,7 +27,7 @@ end})
 function std:waitForSetupComplete()
 	self.baseFolder = self.Services.ReplicatedStorage:WaitForChild("SERVERLIST")
 	self.baseFolder:WaitForChild("SETUP_COMPLETE")
-	self.config = self.baseFolder:WaitForChild("configuration")
+	self.config = require(self.baseFolder:WaitForChild("configuration"))
 end
 
 return std
