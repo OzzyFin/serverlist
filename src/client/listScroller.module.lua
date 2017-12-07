@@ -4,10 +4,64 @@ local std = require(game:GetService("ReplicatedStorage"):WaitForChild("SERVERLIS
 
 --	//
 
+local function toggleServerButtonChildren(serverButton)
+	for _,child in next,serverButton:GetChildren() do
+		if child:IsA("GuiObject") then
+			child.Visible = not child.Visible
+		end
+	end
+end
+
+local function connectServerFrameEvents(scroller,frame)
+	frame.joinButton.MouseButton1Click:Connect(function()
+		if scroller.enabled and frame.serverId.Value then
+			std.Services:TeleportToPlaceInstanceAsync(game.PlaceId,frame.serverId.Value)
+		end
+	end)
+	frame.serverButton.MouseButton1Click:Connect(function()
+		if scroller.enabled then
+			local size = UDim2.new(frame.Size.X.Scale,frame.Size.X.Offset,0,0)
+			if frame.isExpanded.Value == false then
+				size = size + UDim2.new(
+					0,
+					0,
+					frame.Size.Y.Scale*std.config.SERVER_FRAME_EXPAND_MULTIPLIER,
+					frame.Size.Y.Offset*std.config.SERVER_FRAME_EXPAND_MULTIPLIER
+				)
+
+			else
+				size = size + UDim2.new(
+					0,
+					0,
+					frame.Size.X.Scale/std.config.SERVER_FRAME_EXPAND_MULTIPLIER,
+					frame.Size.X.Offset/std.config.SERVER_FRAME_EXPAND_MULTIPLIER
+				)
+			end
+			frame.Size = size
+			frame.isExpanded.Value = not frame.isExpanded.Value
+			toggleServerButtonChildren()
+		end
+	end)
+end
+
+local function findServerFrameByServerNum(scroller,num)
+	for _,child in next,scroller.frame:GetChildren() do
+		if child:FindFirstChild("serverNum") then
+			if child.serverNum.Value == num then
+				return child
+			end
+		end
+	end
+end
+
+--	//
+
 local listScroller = {}
 
 listScroller.new = function(frameProperties)
 	local new = setmetatable({},{__index = listScroller})
+
+	new.enabled = true
 
 	new.frame = std.Assets.listScroller:Clone()
 	for property,value in next,frameProperties do
@@ -15,6 +69,26 @@ listScroller.new = function(frameProperties)
 	end
 
 	return new
+end
+
+function listScroller:writeServerFrame(frame,data)
+	frame.serverId.Value = data.serverId
+	frame.averagePingLabel.Text = data.averagePing
+	frame.serverButton.playerCountLabel.Text = data.playerCount
+	--	// contineun ue hruehruhe uhrueh
+end
+
+function listScroller:addServerFrame(data)
+	local newFrame = std.Assets.listScroller:Clone()
+	self:writeServerFrame(newFrame,data)
+	newFrame.Parent = self.frame
+end
+
+function listScroller:updateServerFrame(serverNum,data)
+	local frame = findServerFrameByServerNum(serverNum)
+	if frame then
+		self:writeServerFrame(frame,data)
+	end
 end
 
 return listScroller
