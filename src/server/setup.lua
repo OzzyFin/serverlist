@@ -57,7 +57,6 @@ clientScripts.Parent = std.Services.StarterPlayer.StarterPlayerScripts
 --  // Create all the necessary remotes
 
 createRemote("RemoteEvent","dataUpdateEvent")
-createRemote("RemoteEvent","requestJoinServerEvent")
 
 --  //
 

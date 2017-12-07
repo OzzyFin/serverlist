@@ -15,14 +15,16 @@ function module:Init()
 	end
 
 	local GUI = std.Assets.SERVERSELECT:Clone()
-	GUI.Parent = localPlayer.PlayerGui
+
 	local scroller = listScroller.new({
 		BackgroundTransparency = 0.5,
 		Size = UDim2.new(0.5,0,0.7,0),
 		AnchorPoint = Vector2.new(0.5,0.5),
 		Position = UDim2.new(0.5,0,0.5,0.5)
 	})
-	scroller.Parent = GUI
+
+	scroller.frame.Parent = GUI
+	GUI.Parent = localPlayer.PlayerGui
 end
 
 return module
