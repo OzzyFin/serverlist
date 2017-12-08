@@ -24,7 +24,7 @@ function module:Init()
 	})
 
 	scroller.frame.Parent = GUI
-	GUI.Parent = localPlayer.PlayerGui
+	GUI.Parent = localPlayer:WaitForChild("PlayerGui")
 end
 
 return module

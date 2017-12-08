@@ -44,16 +44,6 @@ local function connectServerFrameEvents(scroller,frame)
 	end)
 end
 
-local function findServerFrameByServerNum(scroller,num)
-	for _,child in next,scroller.frame:GetChildren() do
-		if child:FindFirstChild("serverNum") then
-			if child.serverNum.Value == num then
-				return child
-			end
-		end
-	end
-end
-
 --	//
 
 local listScroller = {}
@@ -64,6 +54,7 @@ listScroller.new = function(frameProperties)
 	new.enabled = true
 
 	new.frame = std.Assets.listScroller:Clone()
+	new.frame.Visible = true
 	for property,value in next,frameProperties do
 		new.frame[property] = value
 	end
@@ -73,21 +64,26 @@ end
 
 function listScroller:writeServerFrame(frame,data)
 	frame.serverId.Value = data.serverId
+	frame.serverNum.Value = data.serverNum
 	frame.averagePingLabel.Text = data.averagePing
 	frame.serverButton.playerCountLabel.Text = data.playerCount
-	--	// contineun ue hruehruhe uhrueh
+	frame.serverButton.serverNumLabel.Text = data.serverNum
 end
 
 function listScroller:addServerFrame(data)
-	local newFrame = std.Assets.listScroller:Clone()
+	local newFrame = std.Assets.serverFrame:Clone()
+	newFrame.Visible = true
 	self:writeServerFrame(newFrame,data)
 	newFrame.Parent = self.frame
 end
 
-function listScroller:updateServerFrame(serverNum,data)
-	local frame = findServerFrameByServerNum(serverNum)
-	if frame then
-		self:writeServerFrame(frame,data)
+function listScroller:findServerFrameByServerId(serverId)
+	for _,child in next,self.frame:GetChildren() do
+		if child:FindFirstChild("serverId") then
+			if child.serverId.Value == serverId then
+				return child
+			end
+		end
 	end
 end
 

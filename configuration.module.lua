@@ -1,8 +1,10 @@
 local config = {}
 
-config.MAX_SERVER_COUNT = 2
+config.MAX_SERVER_COUNT = 7
 config.SERVER_MAX_PLAYER_COUNT = 50
 config.SERVER_RESERVED_SPOTS = 0
+
+config.SERVER_LIST_REFRESH_INTERVAL = 30
 
 config.SERVER_SELECT_DISABLE_COREGUIS = true
 
@@ -14,6 +16,7 @@ config.EMPTY_SERVER_DATA = {
 	playerCount = 0,
 	startTime = 0,
 	averagePing = 0,
+	serverNum = 0,
 
 	serverId = game.JobId,
 }

@@ -1,7 +1,7 @@
 <roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Frame" referent="RBX3C762BDBAD9740B8BC749B5742EF9066">
+	<Item class="Frame" referent="RBX6302D122818942F28350A5F977428A64">
 		<Properties>
 			<bool name="Active">false</bool>
 			<Vector2 name="AnchorPoint">
@@ -41,9 +41,9 @@
 			<token name="Style">0</token>
 			<BinaryString name="Tags"></BinaryString>
 			<bool name="Visible">false</bool>
-			<int name="ZIndex">1</int>
+			<int name="ZIndex">2</int>
 		</Properties>
-		<Item class="TextButton" referent="RBXC40C04DB80D84A899A355538FF2CE59C">
+		<Item class="TextButton" referent="RBXF33DCF29F9864898BA213936848D0B12">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -100,7 +100,7 @@
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">1</int>
 			</Properties>
-			<Item class="TextLabel" referent="RBX0BF88E0BFA1F444BB886A6F37B83B144">
+			<Item class="TextLabel" referent="RBX3CC3701CD4BA4EF098D7AE6F77259468">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -117,7 +117,7 @@
 					<int name="LayoutOrder">0</int>
 					<float name="LineHeight">1</float>
 					<bool name="Localize">true</bool>
-					<string name="Name">serverNumber</string>
+					<string name="Name">serverNumLabel</string>
 					<Ref name="NextSelectionDown">null</Ref>
 					<Ref name="NextSelectionLeft">null</Ref>
 					<Ref name="NextSelectionRight">null</Ref>
@@ -154,7 +154,7 @@
 					<int name="ZIndex">1</int>
 				</Properties>
 			</Item>
-			<Item class="TextLabel" referent="RBX8248FBCC37BB48B8BB4680280C98ADDD">
+			<Item class="TextLabel" referent="RBXF38E55EE09CD4EA1AB07667DE40E06A7">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -209,7 +209,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="TextLabel" referent="RBXA072F4D6E43A45E9B522A88090C5BD98">
+		<Item class="TextLabel" referent="RBXCF211DBDAE3746CDAB778F3728568220">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -263,7 +263,7 @@
 				<int name="ZIndex">1</int>
 			</Properties>
 		</Item>
-		<Item class="TextLabel" referent="RBXBBE7EB8195A34EEEAD933BE4AE0BCDDE">
+		<Item class="TextLabel" referent="RBX7A8685D5E11B435AB1ED4966383325B9">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -317,7 +317,7 @@
 				<int name="ZIndex">1</int>
 			</Properties>
 		</Item>
-		<Item class="TextButton" referent="RBX9DCF98D6756246A88957FC87F39867FC">
+		<Item class="TextButton" referent="RBX1CC5C77A95AF42DC9F4CE7DA9E40514D">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -373,6 +373,27 @@
 				<token name="TextYAlignment">1</token>
 				<bool name="Visible">false</bool>
 				<int name="ZIndex">1</int>
+			</Properties>
+		</Item>
+		<Item class="IntValue" referent="RBX6993DF2EC64A4BC58FF697D5F69E2886">
+			<Properties>
+				<string name="Name">serverNum</string>
+				<BinaryString name="Tags"></BinaryString>
+				<int name="Value">0</int>
+			</Properties>
+		</Item>
+		<Item class="BoolValue" referent="RBX0C14E7D610394A53A30A100690EF156E">
+			<Properties>
+				<string name="Name">isExpanded</string>
+				<BinaryString name="Tags"></BinaryString>
+				<bool name="Value">false</bool>
+			</Properties>
+		</Item>
+		<Item class="StringValue" referent="RBXF4404F53797840958FC9F9874DEFAD8B">
+			<Properties>
+				<string name="Name">serverId</string>
+				<BinaryString name="Tags"></BinaryString>
+				<string name="Value"></string>
 			</Properties>
 		</Item>
 	</Item>

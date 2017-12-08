@@ -7,7 +7,7 @@ local localPlayer = std.Services.Players.LocalPlayer
 
 --	//
 
-local maximumServersReached = std.baseFolder.maximumServersReached.value
+local maximumServersReached = std.baseFolder.maximumServersReached.Value
 
 local GUIModule = require(maximumServersReached and script.Parent.serverSelect or script.Parent.serverList)
 GUIModule:Init()

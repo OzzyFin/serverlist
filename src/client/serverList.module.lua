@@ -20,7 +20,22 @@ function module:Init()
 	})
 
 	scroller.frame.Parent = GUI
-	GUI.Parent = localPlayer.PlayerGui
+	GUI.Parent = localPlayer:WaitForChild("PlayerGui")
+
+	std.Remotes.serverListUpdateEvent.OnClientEvent:Connect(function(serverList)
+		for serverNum,serverData in next,serverList do
+			serverData.serverNum = serverNum
+			local frame = scroller:findServerFrameByServerId(serverData.serverId)
+			if frame then
+				scroller:writeServerFrame(frame,serverData)
+			else
+				scroller:addServerFrame(serverData)
+			end
+		end
+	end)
+
+	--	// Ask for the data for the first time
+	std.Remotes.serverListUpdateEvent:FireServer()
 end
 
 return module
