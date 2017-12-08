@@ -1,15 +1,15 @@
 <roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
 	<External>null</External>
 	<External>nil</External>
-	<Item class="ScrollingFrame" referent="RBX53038823088549B2A1F49702353B42CC">
+	<Item class="ScrollingFrame" referent="RBXCC73F1435FA7410F8FD40709DEA88CDD">
 		<Properties>
 			<bool name="Active">false</bool>
 			<Vector2 name="AnchorPoint">
-				<X>0.5</X>
-				<Y>0.5</Y>
+				<X>1</X>
+				<Y>1</Y>
 			</Vector2>
 			<Color3 name="BackgroundColor3">4286545791</Color3>
-			<float name="BackgroundTransparency">0.5</float>
+			<float name="BackgroundTransparency">1</float>
 			<Color3 name="BorderColor3">4279970357</Color3>
 			<int name="BorderSizePixel">0</int>
 			<Content name="BottomImage"><url>rbxasset://textures/ui/Scroll/scroll-bottom.png</url></Content>
@@ -35,9 +35,9 @@
 			<Ref name="NextSelectionRight">null</Ref>
 			<Ref name="NextSelectionUp">null</Ref>
 			<UDim2 name="Position">
-				<XS>0.5</XS>
+				<XS>1</XS>
 				<XO>0</XO>
-				<YS>0.5</YS>
+				<YS>1</YS>
 				<YO>0</YO>
 			</UDim2>
 			<float name="Rotation">0</float>
@@ -46,9 +46,9 @@
 			<bool name="Selectable">true</bool>
 			<Ref name="SelectionImageObject">null</Ref>
 			<UDim2 name="Size">
-				<XS>0.5</XS>
+				<XS>0.200000003</XS>
 				<XO>0</XO>
-				<YS>0.699999988</YS>
+				<YS>0.300000012</YS>
 				<YO>0</YO>
 			</UDim2>
 			<token name="SizeConstraint">0</token>
@@ -60,7 +60,7 @@
 			<bool name="Visible">true</bool>
 			<int name="ZIndex">2</int>
 		</Properties>
-		<Item class="UIListLayout" referent="RBXA436D1D47ECB4ACC8A106C19EAA5AE09">
+		<Item class="UIListLayout" referent="RBX7822A5F684364CDDA062525455F5534C">
 			<Properties>
 				<token name="FillDirection">1</token>
 				<token name="HorizontalAlignment">0</token>
@@ -73,381 +73,6 @@
 				<BinaryString name="Tags"></BinaryString>
 				<token name="VerticalAlignment">1</token>
 			</Properties>
-		</Item>
-		<Item class="Frame" referent="RBX0C13561BD56B45ACA33800B220214543">
-			<Properties>
-				<bool name="Active">false</bool>
-				<Vector2 name="AnchorPoint">
-					<X>0</X>
-					<Y>0</Y>
-				</Vector2>
-				<Color3 name="BackgroundColor3">4283716692</Color3>
-				<float name="BackgroundTransparency">0.699999988</float>
-				<Color3 name="BorderColor3">4279970357</Color3>
-				<int name="BorderSizePixel">0</int>
-				<bool name="ClipsDescendants">false</bool>
-				<bool name="Draggable">false</bool>
-				<int name="LayoutOrder">0</int>
-				<bool name="Localize">true</bool>
-				<string name="Name">serverFrame</string>
-				<Ref name="NextSelectionDown">null</Ref>
-				<Ref name="NextSelectionLeft">null</Ref>
-				<Ref name="NextSelectionRight">null</Ref>
-				<Ref name="NextSelectionUp">null</Ref>
-				<UDim2 name="Position">
-					<XS>0</XS>
-					<XO>0</XO>
-					<YS>0</YS>
-					<YO>0</YO>
-				</UDim2>
-				<float name="Rotation">0</float>
-				<bool name="Selectable">false</bool>
-				<Ref name="SelectionImageObject">null</Ref>
-				<UDim2 name="Size">
-					<XS>0.949999988</XS>
-					<XO>0</XO>
-					<YS>0.150000006</YS>
-					<YO>0</YO>
-				</UDim2>
-				<token name="SizeConstraint">1</token>
-				<bool name="SizeFromContents">false</bool>
-				<token name="Style">0</token>
-				<BinaryString name="Tags"></BinaryString>
-				<bool name="Visible">true</bool>
-				<int name="ZIndex">2</int>
-			</Properties>
-			<Item class="TextButton" referent="RBX47C56F7CE98F484786EF5DCA91F26881">
-				<Properties>
-					<bool name="Active">false</bool>
-					<Vector2 name="AnchorPoint">
-						<X>0.5</X>
-						<Y>0.5</Y>
-					</Vector2>
-					<bool name="AutoButtonColor">true</bool>
-					<Color3 name="BackgroundColor3">4283716692</Color3>
-					<float name="BackgroundTransparency">0</float>
-					<Color3 name="BorderColor3">4279970357</Color3>
-					<int name="BorderSizePixel">0</int>
-					<bool name="ClipsDescendants">false</bool>
-					<bool name="Draggable">false</bool>
-					<token name="Font">0</token>
-					<int name="LayoutOrder">0</int>
-					<float name="LineHeight">1</float>
-					<bool name="Localize">true</bool>
-					<bool name="Modal">false</bool>
-					<string name="Name">serverButton</string>
-					<Ref name="NextSelectionDown">null</Ref>
-					<Ref name="NextSelectionLeft">null</Ref>
-					<Ref name="NextSelectionRight">null</Ref>
-					<Ref name="NextSelectionUp">null</Ref>
-					<UDim2 name="Position">
-						<XS>0.5</XS>
-						<XO>0</XO>
-						<YS>0.5</YS>
-						<YO>0</YO>
-					</UDim2>
-					<float name="Rotation">0</float>
-					<bool name="Selectable">true</bool>
-					<bool name="Selected">false</bool>
-					<Ref name="SelectionImageObject">null</Ref>
-					<UDim2 name="Size">
-						<XS>1</XS>
-						<XO>-5</XO>
-						<YS>0.150000006</YS>
-						<YO>-5</YO>
-					</UDim2>
-					<token name="SizeConstraint">1</token>
-					<bool name="SizeFromContents">false</bool>
-					<token name="Style">0</token>
-					<BinaryString name="Tags"></BinaryString>
-					<string name="Text"></string>
-					<Color3 name="TextColor3">4279970357</Color3>
-					<bool name="TextScaled">false</bool>
-					<float name="TextSize">8</float>
-					<Color3 name="TextStrokeColor3">4278190080</Color3>
-					<float name="TextStrokeTransparency">1</float>
-					<float name="TextTransparency">0</float>
-					<bool name="TextWrapped">false</bool>
-					<token name="TextXAlignment">2</token>
-					<token name="TextYAlignment">1</token>
-					<bool name="Visible">true</bool>
-					<int name="ZIndex">2</int>
-				</Properties>
-				<Item class="TextLabel" referent="RBXBA5E8E11DD124268A16D8755E139DC31">
-					<Properties>
-						<bool name="Active">false</bool>
-						<Vector2 name="AnchorPoint">
-							<X>0</X>
-							<Y>0</Y>
-						</Vector2>
-						<Color3 name="BackgroundColor3">4294967295</Color3>
-						<float name="BackgroundTransparency">1</float>
-						<Color3 name="BorderColor3">4279970357</Color3>
-						<int name="BorderSizePixel">1</int>
-						<bool name="ClipsDescendants">false</bool>
-						<bool name="Draggable">false</bool>
-						<token name="Font">10</token>
-						<int name="LayoutOrder">0</int>
-						<float name="LineHeight">1</float>
-						<bool name="Localize">true</bool>
-						<string name="Name">serverNumber</string>
-						<Ref name="NextSelectionDown">null</Ref>
-						<Ref name="NextSelectionLeft">null</Ref>
-						<Ref name="NextSelectionRight">null</Ref>
-						<Ref name="NextSelectionUp">null</Ref>
-						<UDim2 name="Position">
-							<XS>0.0250000004</XS>
-							<XO>0</XO>
-							<YS>0</YS>
-							<YO>0</YO>
-						</UDim2>
-						<float name="Rotation">0</float>
-						<bool name="Selectable">false</bool>
-						<Ref name="SelectionImageObject">null</Ref>
-						<UDim2 name="Size">
-							<XS>1</XS>
-							<XO>0</XO>
-							<YS>1</YS>
-							<YO>0</YO>
-						</UDim2>
-						<token name="SizeConstraint">0</token>
-						<bool name="SizeFromContents">false</bool>
-						<BinaryString name="Tags"></BinaryString>
-						<string name="Text">#1</string>
-						<Color3 name="TextColor3">4292137143</Color3>
-						<bool name="TextScaled">false</bool>
-						<float name="TextSize">20</float>
-						<Color3 name="TextStrokeColor3">4278190080</Color3>
-						<float name="TextStrokeTransparency">1</float>
-						<float name="TextTransparency">0</float>
-						<bool name="TextWrapped">false</bool>
-						<token name="TextXAlignment">0</token>
-						<token name="TextYAlignment">1</token>
-						<bool name="Visible">true</bool>
-						<int name="ZIndex">2</int>
-					</Properties>
-				</Item>
-				<Item class="TextLabel" referent="RBX37BDE2F6DC2F4FDAB40ED05B9A18C3CF">
-					<Properties>
-						<bool name="Active">false</bool>
-						<Vector2 name="AnchorPoint">
-							<X>1</X>
-							<Y>0</Y>
-						</Vector2>
-						<Color3 name="BackgroundColor3">4294967295</Color3>
-						<float name="BackgroundTransparency">1</float>
-						<Color3 name="BorderColor3">4279970357</Color3>
-						<int name="BorderSizePixel">1</int>
-						<bool name="ClipsDescendants">false</bool>
-						<bool name="Draggable">false</bool>
-						<token name="Font">10</token>
-						<int name="LayoutOrder">0</int>
-						<float name="LineHeight">1</float>
-						<bool name="Localize">true</bool>
-						<string name="Name">playerCountLabel</string>
-						<Ref name="NextSelectionDown">null</Ref>
-						<Ref name="NextSelectionLeft">null</Ref>
-						<Ref name="NextSelectionRight">null</Ref>
-						<Ref name="NextSelectionUp">null</Ref>
-						<UDim2 name="Position">
-							<XS>0.975000024</XS>
-							<XO>0</XO>
-							<YS>0</YS>
-							<YO>0</YO>
-						</UDim2>
-						<float name="Rotation">0</float>
-						<bool name="Selectable">false</bool>
-						<Ref name="SelectionImageObject">null</Ref>
-						<UDim2 name="Size">
-							<XS>1</XS>
-							<XO>0</XO>
-							<YS>1</YS>
-							<YO>0</YO>
-						</UDim2>
-						<token name="SizeConstraint">0</token>
-						<bool name="SizeFromContents">false</bool>
-						<BinaryString name="Tags"></BinaryString>
-						<string name="Text">Players: x / y</string>
-						<Color3 name="TextColor3">4292137143</Color3>
-						<bool name="TextScaled">false</bool>
-						<float name="TextSize">18</float>
-						<Color3 name="TextStrokeColor3">4278190080</Color3>
-						<float name="TextStrokeTransparency">1</float>
-						<float name="TextTransparency">0</float>
-						<bool name="TextWrapped">false</bool>
-						<token name="TextXAlignment">1</token>
-						<token name="TextYAlignment">1</token>
-						<bool name="Visible">true</bool>
-						<int name="ZIndex">2</int>
-					</Properties>
-				</Item>
-			</Item>
-			<Item class="TextLabel" referent="RBX4040438ABA2446CA80B1943CA20C5531">
-				<Properties>
-					<bool name="Active">false</bool>
-					<Vector2 name="AnchorPoint">
-						<X>0</X>
-						<Y>0</Y>
-					</Vector2>
-					<Color3 name="BackgroundColor3">4294967295</Color3>
-					<float name="BackgroundTransparency">1</float>
-					<Color3 name="BorderColor3">4279970357</Color3>
-					<int name="BorderSizePixel">1</int>
-					<bool name="ClipsDescendants">false</bool>
-					<bool name="Draggable">false</bool>
-					<token name="Font">10</token>
-					<int name="LayoutOrder">0</int>
-					<float name="LineHeight">1</float>
-					<bool name="Localize">true</bool>
-					<string name="Name">uptimeLabel</string>
-					<Ref name="NextSelectionDown">null</Ref>
-					<Ref name="NextSelectionLeft">null</Ref>
-					<Ref name="NextSelectionRight">null</Ref>
-					<Ref name="NextSelectionUp">null</Ref>
-					<UDim2 name="Position">
-						<XS>0.0250000004</XS>
-						<XO>0</XO>
-						<YS>0.400000006</YS>
-						<YO>0</YO>
-					</UDim2>
-					<float name="Rotation">0</float>
-					<bool name="Selectable">false</bool>
-					<Ref name="SelectionImageObject">null</Ref>
-					<UDim2 name="Size">
-						<XS>0.5</XS>
-						<XO>0</XO>
-						<YS>0.200000003</YS>
-						<YO>0</YO>
-					</UDim2>
-					<token name="SizeConstraint">0</token>
-					<bool name="SizeFromContents">false</bool>
-					<BinaryString name="Tags"></BinaryString>
-					<string name="Text">Uptime xx:xx:xx</string>
-					<Color3 name="TextColor3">4292137143</Color3>
-					<bool name="TextScaled">false</bool>
-					<float name="TextSize">18</float>
-					<Color3 name="TextStrokeColor3">4278190080</Color3>
-					<float name="TextStrokeTransparency">1</float>
-					<float name="TextTransparency">0</float>
-					<bool name="TextWrapped">false</bool>
-					<token name="TextXAlignment">0</token>
-					<token name="TextYAlignment">1</token>
-					<bool name="Visible">false</bool>
-					<int name="ZIndex">2</int>
-				</Properties>
-			</Item>
-			<Item class="TextLabel" referent="RBX59AEF41501B94E6989E5E6D05D2887EF">
-				<Properties>
-					<bool name="Active">false</bool>
-					<Vector2 name="AnchorPoint">
-						<X>0</X>
-						<Y>0</Y>
-					</Vector2>
-					<Color3 name="BackgroundColor3">4294967295</Color3>
-					<float name="BackgroundTransparency">1</float>
-					<Color3 name="BorderColor3">4279970357</Color3>
-					<int name="BorderSizePixel">1</int>
-					<bool name="ClipsDescendants">false</bool>
-					<bool name="Draggable">false</bool>
-					<token name="Font">10</token>
-					<int name="LayoutOrder">0</int>
-					<float name="LineHeight">1</float>
-					<bool name="Localize">true</bool>
-					<string name="Name">averagePingLabel</string>
-					<Ref name="NextSelectionDown">null</Ref>
-					<Ref name="NextSelectionLeft">null</Ref>
-					<Ref name="NextSelectionRight">null</Ref>
-					<Ref name="NextSelectionUp">null</Ref>
-					<UDim2 name="Position">
-						<XS>0.0250000004</XS>
-						<XO>0</XO>
-						<YS>0.600000024</YS>
-						<YO>0</YO>
-					</UDim2>
-					<float name="Rotation">0</float>
-					<bool name="Selectable">false</bool>
-					<Ref name="SelectionImageObject">null</Ref>
-					<UDim2 name="Size">
-						<XS>0.5</XS>
-						<XO>0</XO>
-						<YS>0.200000003</YS>
-						<YO>0</YO>
-					</UDim2>
-					<token name="SizeConstraint">0</token>
-					<bool name="SizeFromContents">false</bool>
-					<BinaryString name="Tags"></BinaryString>
-					<string name="Text">Average ping: x</string>
-					<Color3 name="TextColor3">4292137143</Color3>
-					<bool name="TextScaled">false</bool>
-					<float name="TextSize">18</float>
-					<Color3 name="TextStrokeColor3">4278190080</Color3>
-					<float name="TextStrokeTransparency">1</float>
-					<float name="TextTransparency">0</float>
-					<bool name="TextWrapped">false</bool>
-					<token name="TextXAlignment">0</token>
-					<token name="TextYAlignment">1</token>
-					<bool name="Visible">false</bool>
-					<int name="ZIndex">2</int>
-				</Properties>
-			</Item>
-			<Item class="TextButton" referent="RBX3D0025E3D3724164894889C1E061DA4B">
-				<Properties>
-					<bool name="Active">false</bool>
-					<Vector2 name="AnchorPoint">
-						<X>1</X>
-						<Y>0.5</Y>
-					</Vector2>
-					<bool name="AutoButtonColor">true</bool>
-					<Color3 name="BackgroundColor3">4283716692</Color3>
-					<float name="BackgroundTransparency">0</float>
-					<Color3 name="BorderColor3">4279970357</Color3>
-					<int name="BorderSizePixel">0</int>
-					<bool name="ClipsDescendants">false</bool>
-					<bool name="Draggable">false</bool>
-					<token name="Font">10</token>
-					<int name="LayoutOrder">0</int>
-					<float name="LineHeight">1</float>
-					<bool name="Localize">true</bool>
-					<bool name="Modal">false</bool>
-					<string name="Name">joinButton</string>
-					<Ref name="NextSelectionDown">null</Ref>
-					<Ref name="NextSelectionLeft">null</Ref>
-					<Ref name="NextSelectionRight">null</Ref>
-					<Ref name="NextSelectionUp">null</Ref>
-					<UDim2 name="Position">
-						<XS>0.975000024</XS>
-						<XO>0</XO>
-						<YS>0.649999976</YS>
-						<YO>0</YO>
-					</UDim2>
-					<float name="Rotation">0</float>
-					<bool name="Selectable">true</bool>
-					<bool name="Selected">false</bool>
-					<Ref name="SelectionImageObject">null</Ref>
-					<UDim2 name="Size">
-						<XS>0.400000006</XS>
-						<XO>0</XO>
-						<YS>0.150000006</YS>
-						<YO>0</YO>
-					</UDim2>
-					<token name="SizeConstraint">1</token>
-					<bool name="SizeFromContents">false</bool>
-					<token name="Style">5</token>
-					<BinaryString name="Tags"></BinaryString>
-					<string name="Text">Join</string>
-					<Color3 name="TextColor3">4279970357</Color3>
-					<bool name="TextScaled">false</bool>
-					<float name="TextSize">18</float>
-					<Color3 name="TextStrokeColor3">4278190080</Color3>
-					<float name="TextStrokeTransparency">1</float>
-					<float name="TextTransparency">0</float>
-					<bool name="TextWrapped">false</bool>
-					<token name="TextXAlignment">2</token>
-					<token name="TextYAlignment">1</token>
-					<bool name="Visible">false</bool>
-					<int name="ZIndex">2</int>
-				</Properties>
-			</Item>
 		</Item>
 	</Item>
 </roblox>

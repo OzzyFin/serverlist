@@ -2,7 +2,7 @@ local DSS = game:GetService("DataStoreService")
 
 local storages = {
 
-	serverData = DSS:GetDataStore("SERVERLIST_DATASTORE_DEVTEST1")
+	serverData = DSS:GetDataStore("SERVERLIST_DATASTORE_DEVTEST6")
 	--  //
 	--  //  serverList = {
 	--  //    [1] = {serverData}
